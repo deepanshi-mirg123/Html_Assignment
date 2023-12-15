@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knoldus Inc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            /* background-image: linear-gradient(to bottom right, #ffb6c1, #7dd17d); */
+            font-family: 'Arial', sans-serif;
+            /* color: midnightblue; */
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4caf50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .left{
+            text-align: left;
+        }
+
+        .query-form {
+            border: 2px solid grey;
+            width: 30%;
+            
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        label {
+            margin-bottom: 3px;
+            color: #333;
+        }
+
+        
+        .team{
+            height: 40%;
+            width: 30%;
+            left: 0px;
+            margin-top:0px;
+        }
+        .form{
+            height: 40%;
+            width: 30%;
+            right:0px;
+        }
+
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            /* padding: 10px; */
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"]{
+            margin: 0;
+            width: auto;
+        }
+        input[type="checkbox"]{
+            margin: 0;
+            width: auto;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            margin-top:10px;
+             padding: 20px 0;
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%; 
+        } 
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="myheader">
+        <div>
+            <h1>Welcome to Knoldus</h1>
+            <h2>Part of Nashtech</h2>
+            <hr>
+            <p style="color:white"><u>Knoldus Inc</u> is a <b>Great Place to Work-Certified™ organization.</b> Great Place to Work®
+                Certification is recognized world over by employees and employers alike and is considered the <em>‘Gold
+                    Standard’ </em>in identifying and recognizing Great Workplace Cultures. Knoldus Inc has created a
+                Great Place to Work FOR ALL their employees by excelling on the 5 dimensions of a High-Trust,
+                High-Performance Culture™ – Credibility, Respect, Fairness, Pride and Camaraderie.
+                Business Description: Knoldus engineers digital systems with a product mindset to deliver a competitive
+                advantage to the business. <s>We modernize enterprises through cutting-edge digital engineering by
+                    leveraging Functional programming and a fast data ecosystem.</s> Our mission is to provide
+                cloud-native, reactive and streaming fast data solutions that are message-driven, elastic, resilient,
+                and responsive. </p>
+        </div>
+        <div class="left">
+            <center>
+        <a href="#one">Move to bottom</a><br>
+        Knoldus's CEO & Co-Founder is <p style="color:brown"><b>Vikas Hazrati</b></p>
+        <img src="https://images.yourstory.com/cs/images/people/Vikas1-1603896806238.jpg"alt="CEO"><br>
+        </center>
+        Knoldus's key executives include
+        Vikas Hazrati and 2 others.
+        
+        <ol>
+        <li>Great Place to Work</li>
+        <li>Good Environment</li>
+    </ol>
+
+    Knoldus works on:
+    <ul>
+        <li>Front End</li>
+        <li>Testing</li>
+        <li>AI/ML</li>
+        <li>And Many More....</li>
+    </ul>
+</div>
+</header>
+<!-- Header Section Ends -->
+
+<div class="query-form">
+    <span><b>Contact Us....</b></span>
+    <form id="queryForm"><!-- Text Input -->
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]+" placeholder="Enter your name" required>
+            <br>
+            <label for="queryType"><b>Query Type:</b></label>
+            <select id="queryType" name="queryType" required>
+                <option value="" disabled selected>Select Query Type</option>
+                <option value="Technical">Technical</option>
+                <option value="HR">HR</option>
+                <option value="General">General</option>
+            </select>
+            <!-- Radio Buttons -->
+            <div style="margin-top: 2vh; margin-bottom: 2vh;">
+            <label><b>Gender:</b></label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br />
+        </div>
+            
+            <!-- Checkboxes -->
+            <div style="margin-top: 2vh;">
+            <label><b>Reviews</b></label><br>
+            <input type="checkbox" id="interest1" name="interests[]" value="reading">
+            <label for="interest1">Good </label><br>
+            <input type="checkbox" id="interest2" name="interests[]" value="coding">
+            <label for="interest2">Bad</label>
+        </div>
+        <div style="margin-top: 2vh;">
+
+            <label for="query"><b>Your Query:</b></label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+        </div>
+            <input type="submit" value="Submit Query">
+        </form>
+    </div>
+    
+        
+        <div class="Form">
+        <!-- Table Section -->
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Vikas Hazrati</td>
+                <td>CEO & Co-Founder</td>
+                <td>vikas.hazrati@knoldus.com</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>CTO</td>
+                <td>john.doe@knoldus.com</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>HR Manager</td>
+                <td>jane.doe@knoldus.com</td>
+            </tr>
+        </table>
+        </div>
+        <!-- Table Section Ends -->
+    
+   
+    
+    <br>
+    <center>
+    <img src="data:image/jpeg;base64,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" alt ="Knoldus Logo"width ="100" height="100">
+    <img src="data:image/png;base64,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"
+    alt ="Nashtech" width="100" height="100">
+    </center>
+    <br>
+    <a href="https://www.nashtechglobal.com/">Click me for more information</a> 
+    <hr>
+
+    <!-- Footer Section -->
+    <footer id="one">
+        <p style="color:white ">&copy; 2023 Knoldus Inc. All Rights Reserved. | </p>
+    </footer>
+    <!-- Footer Section Ends -->
+</body>
+
+</html>
